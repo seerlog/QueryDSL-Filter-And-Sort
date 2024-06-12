@@ -4,18 +4,15 @@ import org.example.querydslfilterandsort.domain.store.repository.CustomStoreRepo
 import org.example.querydslfilterandsort.domain.store.repository.StoreRepository;
 import org.example.querydslfilterandsort.request.store.StoreSearchDto;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.platform.commons.logging.Logger;
 import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @DataJpaTest
 @ActiveProfiles("test")
-@ExtendWith(SpringExtension.class)
 @Import(TestQueryDslConfig.class)
 public class StoreRepositoryTest {
     private final Logger logger = LoggerFactory.getLogger(StoreRepositoryTest.class);
