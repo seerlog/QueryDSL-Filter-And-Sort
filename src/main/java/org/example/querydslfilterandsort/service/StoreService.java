@@ -29,8 +29,8 @@ public class StoreService {
         List<Store> storeList = new ArrayList<>();
         storeList.add(Store.of(1, "운영중", LocalDate.of(2024, 1, 8)));
         storeList.add(Store.of(2, "운영중", LocalDate.of(2024, 1, 17)));
-        storeList.add(Store.of(3, "운영중", LocalDate.of(2024, 2, 3)));
-        storeList.add(Store.of(4, "운영중", LocalDate.of(2024, 2, 22)));
+        storeList.add(Store.of(3, "휴업", LocalDate.of(2024, 2, 3)));
+        storeList.add(Store.of(4, "폐업", LocalDate.of(2024, 2, 22)));
         storeList.add(Store.of(5, "운영중", LocalDate.of(2024, 3, 1)));
         storeRepository.saveAll(storeList);
     }
