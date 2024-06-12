@@ -23,7 +23,6 @@ public class CustomStoreRepoImpl implements CustomStoreRepo {
     private final JPAQueryFactory jpaQueryFactory;
     private final HashMap<String, SimpleExpression> expressionMap = new HashMap<>();
 
-
     public CustomStoreRepoImpl(JPAQueryFactory jpaQueryFactory) {
         this.jpaQueryFactory = jpaQueryFactory;
         expressionMap.put("no", store.no);
